@@ -5,12 +5,10 @@ Manage_Ball::Manage_Ball(Setting& setting, sf::RenderWindow& window)
 :   m_setting(setting)
 ,   m_ball(setting, window) 
 {
-    //TODO seprait to difrents functoins
     m_sprite = new My_Sprite();
     m_img = m_sprite->get_img(m_setting.ball_path);
     m_ball.m_img = m_img;
     m_img->setPosition(m_setting.ball_pos);
-    // set_img();
 }
 
 Manage_Ball::~Manage_Ball()
